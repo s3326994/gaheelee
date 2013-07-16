@@ -193,15 +193,33 @@ footer {
 
 	.entry{
 		.portfolio_thumb{
+			width: 1000px;
+			.lightbox{
+				display: inline-block;
+				a{
+				float: left;
+				opacity: 1;
+				}
+				&:hover{
+					opacity: 0.85;
+				}
+			}		 
 			.portfolio_images_block{
-				margin: -317px 0 317px 0;
+				display: inline-block;
 				ul.portfolio_images_rows{
-					width: 310px;
-					list-style-image: none;
-					float: right;
-					li.portfolio_images_gallery{
+					width: 330px;
+					list-style: none;
+					margin-left: 1px;
+					a{
+						border:none;
+					}
+					li{
+						padding: 1px 2px 0px 2px;
 						float: left;
-						margin: 3px 2.5px;
+						opacity: 1;
+						&:hover{
+							opacity: 0.85;
+						}
 					}
 				}
 			}

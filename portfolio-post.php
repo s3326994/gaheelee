@@ -74,7 +74,7 @@ get_header(); ?>
 
 							<div class="portfolio_thumb">
 								<a class="lightbox" rel="portfolio_fancybox" href="<?php echo $image_large[0]; ?>" title="<?php echo $image_desc; ?>">
-									<img src="<?php echo $image[0]; ?>" width="700" height="310" alt="<?php echo $image_alt; ?>" />
+									<img src="<?php echo $image[0]; ?>" width="650" height="310" alt="<?php echo $image_alt; ?>" />
 								</a>
 
 								<div class="portfolio_images_block">
