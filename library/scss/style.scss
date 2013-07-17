@@ -229,12 +229,14 @@ footer {
 	.portfolio_short_content{
 		color: black;
 		font-family: $body;
-		font-weight: Light;
 		font-size: 15px;
 		width: 650px;
-		line-height: 1.5em;
+		h4{
+			line-height: 1.5em;
+		}
 		p{
 			color: $gh-grey;
+			margin-bottom: 0.3em;
 		}
 		.lable{
 			color: $gh-grey;
