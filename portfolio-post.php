@@ -105,7 +105,7 @@ get_header(); ?>
 									<?php } ?>
 										<li class="portfolio_images_gallery">
 											<a class="lightbox" rel="portfolio_fancybox" href="<?php echo $image_large[0]; ?>" title="<?php echo $image_desc; ?>">
-												<img src="<?php echo $image[0]; ?>" " alt="<?php echo $image_alt; ?>" />
+												<img src="<?php echo $image[0]; ?>" alt="<?php echo $image_alt; ?>" />
 											</a>
 											<br /><?php echo $image_title; ?>
 										</li>
@@ -142,7 +142,7 @@ get_header(); ?>
 										<?php } ?>
 								<?php }
 								if( 1 == $portfolio_options['prtfl_description_additional_field'] ) { ?>
-										<p><span class="lable"><?php echo $portfolio_options['prtfl_description_text_field']; ?></span> <?php echo str_replace("\n", "<br />", $full_descr); ?></p>
+										<p><?php echo str_replace("\n", "<br />", $full_descr); ?></p>
 								<?php } ?>
 								<?php if ( 0 != $user_id && $portfolio_options ) {
 									if( 1 == $portfolio_options['prtfl_svn_additional_field'] ) { ?>
