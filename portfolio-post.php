@@ -163,6 +163,7 @@ get_header(); ?>
 								 } ?>
 							</div> <!-- .portfolio_short_content -->
 						</div> <!-- .entry -->
+						
 					</div> <!-- .portfolio_content -->
 			<?php endwhile; ?>
 			
