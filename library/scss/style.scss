@@ -65,6 +65,7 @@ $cyan: #00aeef;
 
 body {
 	background: #fff;
+	font-size: 62.5%;
 }
 
 #logo a img {
@@ -77,7 +78,9 @@ header {
 	position: fixed;
 	width: 120px;
 }
+
 ul#menu-nav {
+	font-size: 1.6em;
 	margin-top: 20px;
 	text-align: center;
 	li a {
@@ -99,7 +102,6 @@ ul#menu-nav {
 #content {
 	float: left;
 	margin: 30px 0 30px 195px;
-	width: 80%;
 }
 
 footer {
@@ -121,8 +123,8 @@ footer {
 	.portfolio_short_content {
 		margin-top: -7px;
 		color: $gh-grey;
+
 		h1 {
-			width: 1022px;
 			border-bottom: 2px dotted black;
 			padding: 0.6em 0;
 			margin-bottom: 0.8em;
@@ -138,6 +140,7 @@ footer {
 				}
 			}
 		}
+
 		.portfolio_terms {
 			font-size: 13px;
 			text-transform: capitalize;
@@ -154,6 +157,7 @@ footer {
 			}
 			margin-bottom: 20px;
 		}
+
 	}
 	.portfolio_thumb {
 		padding: 15px 0px 35px 0px;
@@ -201,12 +205,15 @@ footer {
 
 	.entry{
 		.portfolio_thumb{
-			width: 1000px;
+			img {
+				width: 100%;
+			}
+
 			.lightbox{
 				display: inline-block;
 				a{
-				float: left;
-				opacity: 1;
+					float: left;
+					opacity: 1;
 				}
 				&:hover{
 					opacity: 0.85;
@@ -235,10 +242,8 @@ footer {
 	}
 
 	.portfolio_short_content{
-		color: black;
 		font-family: $body;
 		font-size: 15px;
-		width: 650px;
 		h4{
 			line-height: 1.5em;
 		}
@@ -258,7 +263,6 @@ footer {
  -------------------------------------------------*/
 
 .entry-content{
-	width: 1000px;
 	h2{
 		width: 850px;
 		border-top: 2px dotted black;
@@ -426,6 +430,28 @@ footer {
 		}
 	}
 }
+
+/*-------------------------------------------------
+  7 - Media Queries 
+ -------------------------------------------------*/
+
+ /* Large desktop */
+ @media (min-width: 1200px) { }
+
+/* Portrait tablet to landscape and desktop */
+ @media (min-width: 768px) and (max-width: max-width: 979px) {
+
+ }
+
+ /* Landscape phone to portrait */
+ @media (max-width: 768px) {
+
+ }
+
+  /* Landscape phone and down */
+ @media (max-width: 400px) {
+
+ }
 
  /*-------------------------------------------------
   9 - Miscellaneous 
