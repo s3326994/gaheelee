@@ -159,11 +159,11 @@ footer {
 		padding: 15px 0px 35px 0px;
 		cursor: pointer;;
 	}
-	a{
+	a#main_img{
 		opacity: 1;
-	}
-	&:hover{
-		opacity: 0.85;
+		&:hover{
+			opacity: 0.85;
+		}
 	}
 }
 
