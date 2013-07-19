@@ -119,12 +119,13 @@ footer {
 
 .entry {
 	.portfolio_short_content {
+		margin-top: -7px;
 		color: $gh-grey;
 		h1 {
 			width: 1022px;
 			border-bottom: 2px dotted black;
-			padding: 0.5em 0;
-			margin-bottom: 0.5em;
+			padding: 0.6em 0;
+			margin-bottom: 0.8em;
 			a {
 				@include transition(0.15s);
 				font-family: $heading;
@@ -154,8 +155,14 @@ footer {
 			margin-bottom: 20px;
 		}
 	}
-		.portfolio_thumb {
-			padding: 15px 0px 35px 0px;
+	.portfolio_thumb {
+		padding: 15px 0px 35px 0px;
+	}
+	a{
+		opacity: 1;
+	}
+	&:hover{
+		opacity: 0.85;
 	}
 }
 
