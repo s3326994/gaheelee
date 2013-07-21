@@ -74,7 +74,7 @@ body {
 
 header {
 	float: left;
-	margin: 30px 20px;
+	margin: 30px;
 	position: fixed;
 	width: 120px;
 }
@@ -101,7 +101,7 @@ ul#menu-nav {
 
 #content {
 	float: left;
-	margin: 30px 0 30px 195px;
+	margin: 20px 0 30px 160px;
 }
 
 footer {
@@ -121,7 +121,7 @@ footer {
 
 .entry {
 	.portfolio_short_content {
-		margin-top: -7px;
+		margin-left: -10px;
 		color: $gh-grey;
 
 		h1 {
@@ -132,7 +132,7 @@ footer {
 				@include transition(0.15s);
 				font-family: $heading;
 				color: #000;
-				font-size: 35px;
+				font-size: 2.35em;
 				text-decoration: none;
 				&:hover {
 					@include transition(0.15s);
@@ -142,16 +142,14 @@ footer {
 		}
 
 		.portfolio_terms {
-			font-size: 13px;
 			text-transform: capitalize;
 			color: $gh-grey;
 			a {	
-				font-size: 12px;
+				font-size: 0.8em;
 				color: $gh-grey;
 				font-family: $heading;
 				&:hover {
 					color: black;
-					font-family: $heading;
 					text-decoration: underline;
 				}
 			}
@@ -160,6 +158,7 @@ footer {
 
 	}
 	.portfolio_thumb {
+		margin-left: -10px;
 		padding: 15px 0px 35px 0px;
 		cursor: pointer;;
 	}
@@ -177,17 +176,18 @@ footer {
 
 #content{
 	.breadcrumbs{
-		padding: 0.04em 0 0.25em;
+		margin: 18px 87px 0 30px;
+		padding: 0.04em 0 0.23em;
 		border-bottom: 2px dotted black;
-		width: 1022px;
 		font-family: $heading;
 		color: #000;
-		font-size: 35px;
+		font-size: 3.53em;
 		text-decoration: none;
 	}
 	.technologies {
 		font-size: 13px;
-		padding-top: 0.95em;
+		margin: 2px 87px 0 30px;
+		padding-top: 1em;
 		text-transform: capitalize;
 		color: $gh-grey;
 		a {	
@@ -200,10 +200,12 @@ footer {
 				text-decoration: underline;
 			}
 		}
-		margin-bottom: 21px;
+		margin-bottom: 17px;
 	}
 
-	.entry{
+	.entry {
+		padding: 0 20px;
+		margin: 0 0 0 10px;
 		.portfolio_thumb{
 			img {
 				width: 100%;
@@ -246,10 +248,11 @@ footer {
 		font-size: 15px;
 		h4{
 			line-height: 1.5em;
+			margin: 0 430px 20px 30px;
 		}
 		p{
 			color: $gh-grey;
-			margin-bottom: 0.3em;
+			margin: 0 430px 5px 30px;
 		}
 		.lable{
 			color: $gh-grey;
@@ -263,32 +266,33 @@ footer {
  -------------------------------------------------*/
 
 .entry-content{
+	font-size: 2em;
+	padding: 10px 10px;
 	h2{
-		width: 850px;
+		margin: 0 1.2em 0 0.4em;			 
 		border-top: 2px dotted black;
 		border-bottom: 2px dotted black;
 		color: $gh-grey;
 		padding: 0.5em 3em 0.5em 0;
 		font-family: $heading;
-		font-size: 50px;
+		font-size: 2.5em;
 		font-weight: 300;
+		line-height: 1em;
 	}
-	h3{
-		width: 850px;
-		padding: 1em 6em 1em 0;
+	h3{	
 		font-family: $body;
-		font-size: 30px;
 		color: $gh-grey;
 		font-weight: 300;
+		font-size: 1.5em;
 		line-height: 1.15em;
+		margin: 1em 7em 1em 0.75em;
 	}
 	h4{
-		width: 830px;
-		padding: 0.2em 12em 0.5em 0;
 		font-family: $body;
-		font-size: 15px;
 		color: black;
+		font-size: 0.75em;
 		line-height: 1.5em;
+		margin: 1em 16em 0em 1.5em;
 	}
 	.downloadbtn{
 		background-image: url('../images/pdf_icon.png');
@@ -304,6 +308,7 @@ footer {
 		text-transform: uppercase;
 		float: right;
 		text-decoration: none;
+		margin: 0em 4em; 
 		&:hover {
 			cursor: pointer;
 			background-color: rgba(0, 174, 239, 0.5);
@@ -316,13 +321,11 @@ footer {
  -------------------------------------------------*/
 .entry-content{
 	.contact{
-		width: 360px;
-		float: left;
-		display: inline;
+		width: 32.5%;
 		line-height: 1.5em;
-		margin: 18px 30px 0;
 		font-family: $body;
-		font-size: 15px;
+		font-size: 0.75em;
+		margin: 25px 0 0 400px;
 		a {
 			color: #000;
 			text-decoration: none;
@@ -332,22 +335,21 @@ footer {
 			}
 		}
 		h3{
-			width: 150px;
-			color: $gh-grey;
 			font-family: $heading;
-			font-size: 25px;
-			padding: 0.2em 0;
-			margin-top: 0.5em;
+			margin: 1em 0 0.3em 0;
+			font-size: 1.65em;
 		}
 	}
 	.wpcf7{
-		margin: 25px 0 0 2px;
+		margin: 30px 0 0 22px;
 		width: 320px;
 		background-color: $gh-grey;
 		padding: 0.8em;
 		color: white;
 		font-family: $body;
 		float: left;
+		display: inline-block;
+		font-size: 0.8em;
 	}
 	input[type="text"], input[type="email"]{
 		margin: 10px 0;
@@ -355,7 +357,7 @@ footer {
 		height: 20px;
 		width: 310px;
 		font-family: $body;
-		font-size: 13px;
+		font-size: 0.8em;
 		padding: 0.2em 0.2em;
 	}
 	textarea{
@@ -404,7 +406,7 @@ footer {
 /*-------------------------------------------------
   6 - Technology
  -------------------------------------------------*/
-.entry{
+.entry {
 	.portfolio_short_content_technology{
 		padding: 2em 0 0.4em; 
 		font-size: 15px;
@@ -431,32 +433,223 @@ footer {
 	}
 }
 
-/*-------------------------------------------------
-  7 - Media Queries 
- -------------------------------------------------*/
-
- /* Large desktop */
- @media (min-width: 1200px) { }
-
-/* Portrait tablet to landscape and desktop */
- @media (min-width: 768px) and (max-width: max-width: 979px) {
-
- }
-
- /* Landscape phone to portrait */
- @media (max-width: 768px) {
-
- }
-
-  /* Landscape phone and down */
- @media (max-width: 400px) {
-
- }
-
  /*-------------------------------------------------
   9 - Miscellaneous 
  -------------------------------------------------*/
 
 .clearfix {
 	clear: both;
+}
+/*-------------------------------------------------
+  7 - Media Queries 
+ -------------------------------------------------*/
+
+/* Tablet Devices, Desktop and Laptop Screens */
+@media only screen and (max-width: 768px) 	{
+	header {
+		float: none;
+		margin: 20px 35px;
+		position: static;
+		width: 100%;
+
+		#logo {
+			float: left;
+		}
+	}
+
+	ul#menu-nav {
+		margin: 50px 20px;
+		float: left;
+		text-align: left;
+		li {
+			float: left;
+			margin: 0 1em;
+			a {
+				display: inline-block;
+				font-family: $body;
+				padding: 10px;
+			}
+		}
+	}
+
+	#content {
+		float: none;
+		margin: 30px 0;
+		.breadcrumbs{
+			margin: 0 30px;
+			padding: 5.13em 0 0.24em;
+			font-size: 3em;
+		}
+		.technologies {
+			padding-top: 0.8em;
+		}
+		.portfolio_short_content{
+			h4{
+				line-height: 1.5em;
+				margin: 0 30px 70px 30px;
+			}
+			p{
+				margin: 0 0px 5px 30px;
+			}
+		}
+	}
+
+	.entry-content {
+		h1{
+			font-size: 0.85em;
+		}
+		h2{
+			font-size: 2em;
+			margin: 10px 20px;
+			padding: 30px 45px 30px 0px; 
+		}
+		h3{
+			font-size: 1.2em;
+			margin: 30px 20px;
+			padding-right: 50px; 
+		}
+		h4{
+			margin: 20px 20px 10px 20px;
+			padding-right: 60px; 
+		}
+		.downloadbtn{
+			margin: 15px 20px 30px 0;
+			padding-right: 18px; 
+		}
+		.wpcf7{
+			margin: 20px 0 20px 22px;
+			font-size: 0.75em;
+		}
+		.contact{
+		width: 26%;
+		line-height: 1.5em;
+		font-family: $body;
+		font-size: 0.7em;
+		margin: 25px 0 0 380px;
+			a {
+				color: #000;
+				text-decoration: none;
+				border-bottom: 1px solid $cyan;
+				&:hover {
+					color: $cyan;
+				}
+			}
+			h3{
+				font-family: $heading;
+				margin: 1em 0 0.3em 0;
+				font-size: 1.6em;
+			}
+		}
+	}
+	footer{
+		position: static;
+		margin: -50px auto;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	header {
+		#logo {
+			float: none;
+			width: 200px;
+			margin: 0px auto;
+		}
+	}
+
+	ul#menu-nav {
+		margin: 20px 10px;
+		float: none;
+		text-align: left;
+		li {
+			float: left;
+			margin: 0 0.8em;
+			a {
+				display: inline-block;
+				font-family: $body;
+				padding: 10px;
+			}
+		}
+	}
+
+	#content {
+		float: none;
+		margin: 70px 0 30px 0;
+		.breadcrumbs{
+			margin: 0 30px;
+			padding: 0.7em 0 0.22em;
+			font-size: 2.1em;
+		}
+		.technologies {
+			padding-top: 0.7em;
+		}		
+	}
+
+	.entry-content { 
+		h1{
+			font-size: 0.6em;
+		}
+		h2{
+			font-size: 1.3em;
+			margin: 5px 20px;
+			padding: 20px 0; 
+		}
+		h3{
+			font-size: 1em;
+			margin: 10px 20px;
+			padding: 0; 
+		}
+		h4{
+			font-size: 0.7em;
+			margin: 20px 20px 10px 20px;
+			padding: 0; 
+		}
+		.downloadbtn{
+			float: none;
+			display: block;
+			width: 175px;
+			margin: 30px auto;
+		}
+		.wpcf7{
+			margin: 20px 0 0 22px;
+			font-size: 0.75em;
+			width: 290px;
+			padding: 0.5em;
+		}
+		input[type="text"], input[type="email"]{
+			margin: 7px 0;
+			border: 1px solid white;
+			width: 284px;
+		}
+		textarea{
+			margin: 7px 0;
+			border: 1px solid white;
+			width: 284px;
+		}
+		input[type="submit"]{
+			font-size: 14px;
+		}
+		.contact{
+		float: left;
+		width: 78%;
+		line-height: 1.5em;
+		font-family: $body;
+		font-size: 0.7em;
+		margin: 20px 0 20px 22px;
+			a {
+				color: #000;
+				text-decoration: none;
+				border-bottom: 1px solid $cyan;
+				&:hover {
+					color: $cyan;
+				}
+			}
+			h3{
+				font-family: $heading;
+				margin: 1em 0 0.3em 0;
+				font-size: 1.5em;
+			}
+		}
+	}
+
 }
