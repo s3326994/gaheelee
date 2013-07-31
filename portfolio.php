@@ -140,10 +140,6 @@ get_header(); ?>
 				})(jQuery);
 				</script>
 			</div><!-- #content -->
-			<div id="portfolio_pagenation">
-			<?php if( function_exists( 'prtfl_pagination' ) ) prtfl_pagination(); ?>
-			<input type="hidden" value="Version=2.09" />
-			</div>
 		</div><!-- #container -->
 
 <?php get_footer(); ?>
