@@ -73,9 +73,11 @@ get_header(); ?>
 							} ?>
 
 							<div class="portfolio_thumb">
-								<a class="lightbox" rel="portfolio_fancybox" href="<?php echo $image_large[0]; ?>" title="<?php echo $image_desc; ?>">
-									<img src="<?php echo $image[0]; ?>" width="650" height="310" alt="<?php echo $image_alt; ?>" />
-								</a>
+								<div class="image-container">
+									<a class="lightbox" rel="portfolio_fancybox" href="<?php echo $image_large[0]; ?>" title="<?php echo $image_desc; ?>">
+										<img src="<?php echo $image[0]; ?>" width="650" alt="<?php echo $image_alt; ?>" />
+									</a>
+								</div>
 
 								<div class="portfolio_images_block">
 								<?php 
@@ -123,12 +125,9 @@ get_header(); ?>
 							</div>
 
 
-							<div class="portfolio_short_content">
+							<div class="portfolio_short_content clearfix">
 								<?php if( 1 == $portfolio_options['prtfl_date_additional_field'] ) { ?>
-										<p>
-											<span class="lable"><?php echo $portfolio_options['prtfl_date_text_field']; ?></span> <?php echo $date_compl; ?>
-										</p>
-										<br />
+										<span class="lable"><?php echo $portfolio_options['prtfl_date_text_field']; ?></span> <?php echo $date_compl; ?>
 								<?php }
 								$user_id = get_current_user_id();
 								if( 1 == $portfolio_options['prtfl_link_additional_field'] ) { ?>
@@ -142,7 +141,7 @@ get_header(); ?>
 										<?php } ?>
 								<?php }
 								if( 1 == $portfolio_options['prtfl_description_additional_field'] ) { ?>
-										<p><?php echo str_replace("\n", "<br />", $full_descr); ?></p>
+										<?php echo str_replace("\n", "<br />", $full_descr); ?>
 								<?php } ?>
 								<?php if ( 0 != $user_id && $portfolio_options ) {
 									if( 1 == $portfolio_options['prtfl_svn_additional_field'] ) { ?>
